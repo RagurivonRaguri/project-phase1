@@ -25,11 +25,103 @@ function createCard(games) {
                     <button id="like-button">❤️: <span id="likes-count">${game.likes}</span></button>
                     <button id="dislike-button">👎: <span id="dislikes-count">${game.dislikes}</span></button>
                     <button id="buyButton" class="button">BUY GAME</button>
+                    <button id="editButton" class="button">Edit Game</button>
+                    <button id="deleteButton" class="button">Delete Game</button>
                     </div>
                 </div>
                 `;
-    
+                const buyButton = card.querySelector('#buyButton');
+                buyButton.addEventListener('click', e => {
+                  e.preventDefault();
+                  // const listOfBoughtGames = document.querySelector('#boughtGames');
+                  const searchArea = document.querySelector('#acc-container');
+                  const gameDiv = document.createElement('div');
+                  gameDiv.classList.add('card');
+                  gameDiv.innerHTML = `
+                    <div class="card" style="width: 18rem;">
+                      <img src="${game.image_url}" class="card-img-top" alt="${game.id}">
+                      <div class="card-body">
+                        <h2 class="card-title">${game.name}</h2>
+                        <p class="card-text">Genre:${game.genres}</p>
+                        <p class="card-text">Platforms:${game.platforms}</p>
+                        <p class="card-text">Release Date:${game.release_date}</p>
+                        <p class="card-text">Number of times Bought:${game.bought_times}</p>
+                        <button id="removeButton" class="button">Delete Game</button>
+                      </div>
+                    </div>
+                  `;
+                  searchArea.appendChild(gameDiv);
+                  
+                  const removeGame = () => {
+                    fetch(`http://localhost:3000/games/${game.id}`, {
+                      method: "PATCH",
+                      headers: {
+                        "Content-type": "application/json"
+                      },
+                      body: JSON.stringify({
+                        bought_times: game.bought_times - 1 
+                      })
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                      if (game.bought_times<0) {
 
+                        gameDiv.remove();
+                        
+                      }
+                    }
+                    )
+                    .catch(error => {
+                      console.error(error);
+                    });
+                  };
+                  
+                  gameDiv.querySelector('#removeButton').addEventListener('click', () => {
+                    removeGame();
+                  });
+                });
+
+                const editButton = card.querySelector('#editButton');
+                editButton.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  const newGameName = prompt('Enter new game name:');
+                  if (newGameName) {
+                    const gameName = card.querySelector('.card-title');
+                    gameName.textContent = newGameName;
+                    fetch(`http://localhost:3000/games/${game.id}`, {
+                      method: "PUT",
+                      headers: {
+                        "Content-type": "application/json"
+                      },
+                      body: JSON.stringify({
+                        name: newGameName
+                      })
+                    })
+                    .then(response => {
+                      if (response.ok) {
+                        console.log('Game updated successfully.');
+                      } else {
+                        throw new Error('Failed to update game.');
+                      }
+                    })
+                    .catch(error => {
+                      console.error(error);
+                    });
+                  }
+                });
+                
+        const deleteButton = card.querySelector('#deleteButton');
+        deleteButton.addEventListener('click',e => {
+          e.preventDefault();
+          card.remove();
+          fetch(`http://localhost:3000/games/${game.id}`,{
+            method:"DELETE",
+            headers:{
+              "Content-Type": "application/json"
+            },
+            body:JSON.stringify(game)
+          })
+        })
                 
         const like = card.querySelector('#like-button');
         like.addEventListener('click', likeGame);
@@ -75,63 +167,9 @@ function createCard(games) {
             card.append(dislikeHeart);
 
         }
-        
         gameContainer.appendChild(card);
-        const buy = card.querySelector('#buyButton');
-        buy.addEventListener('click', e => {
-            e.preventDefault();
-            const listOfBoughtGames = document.querySelector('#boughtGames');
-            const gameId = game.id;
-            let gameDiv;
         
-            const existingGameDiv = document.querySelector(`#game-${gameId}`);
-            if (existingGameDiv) {
-                // If the game already exists, update the "Times Bought" value
-                const timesBoughtSpan = existingGameDiv.querySelector(`#times-bought-${gameId}`);
-                const timesBought = Number(timesBoughtSpan.innerText) + 1;
-                timesBoughtSpan.innerText = timesBought;
-            } else {
-                // If the game doesn't exist, create a new entry
-                gameDiv = document.createElement('div');
-                gameDiv.classList.add('card');
-                gameDiv.style.width = '18rem';
-                gameDiv.id = `game-${gameId}`;
-                gameDiv.innerHTML = `
-                    <img src="${game.image_url}" class="card-img-top" alt="${game.id}">
-                    <div class="card-body">
-                        <h2 class="card-title">${game.name}</h2>
-                        <p class="card-text">Genre:${game.genres}</p>
-                        <p class="card-text">Platforms:${game.platforms}</p>
-                        <p class="card-text">Release Date:${game.release_date}</p>
-                        <p class="card-text">Times Bought: <span id="times-bought-${gameId}">1</span></p>
-                        <button id="reset" class="button">Remove Game</button>
-                    </div>`;
-                listOfBoughtGames.appendChild(gameDiv);
-        
-                fetch(`http://localhost:3000/user_games`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(game) 
-                })
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                })
-                
-            }
-            
-            const removeGame = (gameDiv) => {
-                listOfBoughtGames.removeChild(gameDiv);
-            }
-            
-            gameDiv.querySelector('#reset').addEventListener('click', () => {
-                removeGame(gameDiv);
-            });
-        });
-        
-});
+
    function createGame(event) {
   event.preventDefault();
   const gameName = document.querySelector('#gameName').value;
@@ -154,8 +192,8 @@ function createCard(games) {
           platforms: gamePlatforms,
           release_date: "10/2/2020"
         };
-        fetch(`http://localhost:3000/games`, {
-          method: "POST",
+        fetch(`http://localhost:3000/user_games`, {
+          method: "PATCH",
           headers: {"Content-type": "application/json"},
           body: JSON.stringify(game)
         })
@@ -217,5 +255,5 @@ function searchGames(event) {
 }
 const searchForm = document.querySelector('#searchbar');
 searchForm.addEventListener('submit', searchGames);
-
-    }
+    });
+  };

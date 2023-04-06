@@ -38,35 +38,14 @@ body {
 #submitGame:hover {
     background-color: #3e8e41;
   }
-  /* #game-container img {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 5%;
-  }
-  #acc-container img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 5%;
-  }
-  #search-container img {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 5%;
-  } */
   .card{
-    background-color: darksalmon;
+    background-color: plum;
     border-radius: 3%;
 
   }
   .card:hover{
-    color: brown;
-    background-color: beige;
+    color: lightblue;
+    background-color: lightcoral;
   }
   #acc-container{
     display: block;
@@ -94,7 +73,6 @@ body {
     max-width: 400px;
     margin: 0 auto;
     border: 1px solid #ccc;
-    border-radius: 15%;
     border-color: rgb(100, 3, 33);
   }
   .user{
@@ -109,4 +87,10 @@ body {
     display: block;
     margin: auto;
     border-radius: 5%;
+}
+#deleteButton{
+  color: blue;
+}
+#editButton{
+  color: red;
 }
