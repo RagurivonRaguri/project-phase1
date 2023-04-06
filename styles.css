@@ -1,0 +1,112 @@
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 75px;
+    color: rgb(204, 114, 4);
+}
+
+
+body {
+    background-image: url("images/playstation.jpg"); 
+    background-color: #cccccc;
+    background-position: center;
+    list-style-type: none;
+   }
+   .form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: beige;
+  }
+  label{
+    display: flex;
+  }
+  .button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+#submitGame:hover {
+    background-color: #3e8e41;
+  }
+  /* #game-container img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+  }
+  #acc-container img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+  }
+  #search-container img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+  } */
+  .card{
+    background-color: darksalmon;
+    border-radius: 3%;
+
+  }
+  .card:hover{
+    color: brown;
+    background-color: beige;
+  }
+  #acc-container{
+    display: block;
+  }
+  #game-container{
+    display: block;
+  }
+  #search-container{
+    display: block;
+  }
+  #main-container{
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .container {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  #searchbar{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 15%;
+    border-color: rgb(100, 3, 33);
+  }
+  .user{
+    text-align: center;
+    font-family: cursive;
+    font-size: 45px;
+    color: coral;
+}
+.card-img-top{
+  max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+}

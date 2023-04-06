@@ -1,0 +1,397 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Red Dead Redemption 2",
+      "image_url": "https://media.rockstargames.com/rockstargames-newsite/uploads/d5c7e4dcecb612368aee64978f183250b6e643fe.jpg",
+      "genres": "action-adventure",
+      "platforms": [
+        "PS4",
+        "Xbox One",
+        "PC"
+      ],
+      "release_date": "2018-10-26",
+      "InStock": "100",
+      "like": "❤️",
+      "dislike": "👎",
+      "likes": 8,
+      "dislikes": 2
+    },
+    {
+      "id": 2,
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "image_url": "https://assets-prd.ignimgs.com/2022/06/14/zelda-breath-of-the-wild-1655249167687.jpg",
+      "genres": "action-adventure",
+      "platforms": [
+        "Nintendo Switch",
+        "Wii U"
+      ],
+      "release_date": "2017-03-03",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [
+        "👎"
+      ],
+      "likes": 2,
+      "dislikes": null
+    },
+    {
+      "id": 3,
+      "name": "Fortnite",
+      "image_url": "https://image.api.playstation.com/vulcan/ap/rnd/202303/0621/d3c11818a78c6495e84a3d8e8dd6dc652721be36e0eb8c0a.png",
+      "genres": "battle royale",
+      "platforms": [
+        "PS4",
+        "Xbox One",
+        "Nintendo Switch",
+        "PC"
+      ],
+      "release_date": "2017-07-25",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [
+        "👎"
+      ],
+      "likes": null,
+      "dislikes": 5
+    },
+    {
+      "id": 4,
+      "name": "Overwatch",
+      "image_url": "https://image.api.playstation.com/vulcan/ap/rnd/202301/3011/xwuKTCzLwA1tvaINaIq9egdZ.png",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "platforms": [
+        "PS4",
+        "Xbox One",
+        "PC"
+      ],
+      "release_date": "2016-05-24",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 3,
+      "dislikes": 7
+    },
+    {
+      "id": 5,
+      "name": "Call of Duty",
+      "genres": "first-person shooter",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PlayStation"
+      ],
+      "publisher": "Activision",
+      "developer": "Infinity Ward",
+      "release_date": "November 5, 2021",
+      "image_url": "https://assets-prd.ignimgs.com/2022/05/24/call-of-duty-modern-warfare-2-button-02-1653417394041.jpg",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 9,
+      "dislikes": 2
+    },
+    {
+      "id": 6,
+      "name": "Far Cry",
+      "genres": "first-person shooter",
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PlayStation"
+      ],
+      "publisher": "Ubisoft",
+      "developer": "Ubisoft Montreal",
+      "release_date": "October 7, 2021",
+      "image_url": "https://cdn.vox-cdn.com/thumbor/cTHTtzSe8o-1iVQBxXWsfy_6OS8=/474x1094:6690x3901/1200x675/filters:focal(2990x1538:4110x2658)/cdn.vox-cdn.com/uploads/chorus_image/image/54957177/Far_Cry_5_Key_Art_Wide_1495770936.1495764208.jpg",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 6,
+      "dislikes": 1
+    },
+    {
+      "id": 7,
+      "name": "Assassin's Creed",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "platforms": [
+        "PC",
+        "Xbox",
+        "PlayStation"
+      ],
+      "publisher": "Ubisoft",
+      "developer": "Ubisoft Montreal",
+      "release_date": "November 11, 2021",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2208920/capsule_616x353.jpg?t=1671135934",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 9,
+      "dislikes": 1
+    },
+    {
+      "id": 8,
+      "name": "UFC",
+      "genres": "Action-sport",
+      "platforms": [
+        "Xbox",
+        "PlayStation"
+      ],
+      "publisher": "EA Sports",
+      "developer": "EA Vancouver",
+      "release_date": "March 25, 2021",
+      "image_url": "https://media.contentapi.ea.com/content/dam/ufc/ufc-4/images/2020/05/ufc4-reveal.png.adapt.crop1x1.320w.png",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 7,
+      "dislikes": 3
+    },
+    {
+      "id": 9,
+      "name": "WWE",
+      "genres": "Action-sport",
+      "platforms": [
+        "Xbox",
+        "PlayStation"
+      ],
+      "publisher": "2K Sports",
+      "developer": "Yuke's",
+      "release_date": "October 22, 2021",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1942660/capsule_616x353.jpg?t=1680028256",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [
+        "👎"
+      ],
+      "likes": 2,
+      "dislikes": 2
+    },
+    {
+      "id": 10,
+      "name": "The Elder Scrolls",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "developer": "Bethesda Game Studios",
+      "publisher": "Bethesda Softworks",
+      "releaseDate": "1994-present",
+      "platforms": [
+        "Windows",
+        "Xbox",
+        "PlayStation",
+        "Nintendo Switch"
+      ],
+      "gameModes": [
+        "Single-player",
+        "Multiplayer"
+      ],
+      "image_url": "https://cdn.akamai.steamstatic.com/steam/apps/306130/capsule_616x353.jpg?t=1679936368",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 5,
+      "dislikes": 3
+    },
+    {
+      "id": 11,
+      "name": "God of War",
+      "developer": "Santa Monica Studio",
+      "publisher": "Sony Interactive Entertainment",
+      "releaseDate": "2005-present",
+      "platforms": [
+        "PlayStation 5"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "image_url": "https://assets-prd.ignimgs.com/2021/09/09/god-of-war-ragnarok-button-1631231879154.jpg",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 11,
+      "dislikes": null
+    },
+    {
+      "id": 12,
+      "name": "Battlefield V",
+      "developer": " DICE",
+      "publisher": "Sony Interactive Entertainment",
+      "releaseDate": "November 20, 2018",
+      "platforms": [
+        "PlayStation 5"
+      ],
+      "genres": "first-person shooter",
+      "image_url": "https://cdn.vox-cdn.com/thumbor/UMNlhNp1UxL_VH9xGCdTpMMpsZ4=/0x0:3604x1778/1200x800/filters:focal(1514x601:2090x1177)/cdn.vox-cdn.com/uploads/chorus_image/image/59829999/Screen_Shot_2018-05-23_at_4.05.26_PM.0.0.png",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 5,
+      "dislikes": 2
+    },
+    {
+      "id": 13,
+      "name": "Watch Dogs 2",
+      "developer": " DICE",
+      "publisher": "Ubisoft",
+      "releaseDate": "November 20, 2018",
+      "platforms": [
+        "PlayStation 5",
+        "Xbox One",
+        "Windows"
+      ],
+      "genres": [
+        "Open world",
+        "Action-adventure game",
+        "Third-person shooter",
+        "Nonlinear gameplay"
+      ],
+      "image_url": "https://m.media-amazon.com/images/M/MV5BM2EzNmU3NGYtYTcyMy00M2M1LTkyMGUtYjFlNGE0OTFmYmMxXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_FMjpg_UX1000_.jpg",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 3,
+      "dislikes": 3
+    },
+    {
+      "id": 14,
+      "name": "Horizon Forbidden Forest",
+      "developer": "Guerrilla Games",
+      "publisher": "Ubisoft",
+      "releaseDate": "November 20, 2022",
+      "platforms": [
+        "PlayStation 5",
+        "Xbox One",
+        "Windows"
+      ],
+      "genres": [
+        "Open world",
+        "Action-adventure game",
+        "Third-person shooter"
+      ],
+      "image_url": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/HO8vkO9pfXhwbHi5WHECQJdN.png",
+      "InStock": "100",
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 1,
+      "dislikes": 6
+    },
+    {
+      "name": "Mario Cart",
+      "genres": "Racing",
+      "image_url": "https://assets.reedpopcdn.com/Mk-7.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/Mk-7.jpg",
+      "id": 15,
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 3,
+      "dislikes": 1
+    },
+    {
+      "name": "Mortal Kombat",
+      "genres": "Action",
+      "image_url": "https://cdn.akamai.steamstatic.com/steam/apps/976310/header.jpg?t=1654216426",
+      "id": 16,
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 2,
+      "dislikes": null
+    },
+    {
+      "name": "Allstars",
+      "genres": "Action",
+      "image_url": "https://assets-prd.ignimgs.com/2021/12/30/playstation-all-star-battle-royale-button-1640854983470.jpg",
+      "id": 17,
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 2,
+      "dislikes": 2
+    },
+    {
+      "name": "Fifa 23",
+      "genres": "Football",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1811260/capsule_616x353.jpg?t=1679504733",
+      "platforms": "Playstation",
+      "id": 18,
+      "like": [
+        "❤️"
+      ],
+      "dislike": [],
+      "likes": 6,
+      "dislikes": null
+    },
+    {
+      "name": "Broforce",
+      "genres": "Action",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/274190/capsule_616x353.jpg?t=1666986997",
+      "platforms": "PC",
+      "id": 19
+    },
+    {
+      "name": "F1 22",
+      "genres": "Sport",
+      "image_url": "https://cdn.akamai.steamstatic.com/steam/apps/1692250/capsule_616x353.jpg?t=1675949805",
+      "platforms": "Playstation, PC",
+      "release_date": "10/2/2020",
+      "id": 20
+    }
+  ],
+  "user_games": [
+    {
+      "id": 1,
+      "name": "Red Dead Redemption 2",
+      "image_url": "https://media.rockstargames.com/rockstargames-newsite/uploads/d5c7e4dcecb612368aee64978f183250b6e643fe.jpg",
+      "genres": "action-adventure",
+      "platforms": [
+        "PS4",
+        "Xbox One",
+        "PC"
+      ],
+      "release_date": "2018-10-26",
+      "InStock": "100",
+      "like": "❤️",
+      "dislike": "👎",
+      "likes": 8,
+      "dislikes": 2
+    }
+  ]
+}

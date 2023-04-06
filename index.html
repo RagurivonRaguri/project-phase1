@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1><u>Raguri's Gamer Shop</u></h1>
+    <form id="searchbar">
+     <input type="text" id="search-input" placeholder="Search Game">
+     <button id="search-button">🔍</button>
+    </form>
+</header>
+    <form id="addGame" class="form">
+        <label >Game</label>
+        <input id="gameName" type="text" placeholder="Name">
+        <label>Genre</label>
+        <input id="gameGenre" type="text" placeholder="Genre">
+        <label>Game Url</label>
+        <input id="gameUrl" type="text" placeholder="Game Url">
+        <label>gamePlatform</label>
+        <input type="text" id="gamePlatforms" placeholder="Game platform">
+        <button id="submitGame" class="button">Submit Game</button>
+    </form>
+    
+    <div id="main-container">
+        <div id="game-container" class="container">
+            <h2 class="user">Buy Games</h2>
+        </div>
+        <div id="search-container" class="container"></div>
+        <div id="game-list" class="container">
+        <div id="acc-container">
+            <h2 class="user">User's Cart🛒</h2>
+        </div>
+            <ul id="boughtGames"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
