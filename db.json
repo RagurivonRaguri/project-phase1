@@ -1,8 +1,24 @@
 {
   "games": [
     {
+      "id": 1,
       "name": "Red Dead Redemption II",
-      "id": 1
+      "image_url": "https://images.g2a.com/1024x768/1x1x0/red-dead-redemption-2-pc-rockstar-key-global-i10000174280024/5da85be37e696c2b755a1612",
+      "genres": [
+        "Action-adventure",
+        "Western"
+      ],
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "release_date": "May 18, 2010",
+      "publisher": "Rockstar Games",
+      "like": "❤️",
+      "dislike": "👎",
+      "likes": 9,
+      "dislikes": 1,
+      "bought_times": 1
     },
     {
       "id": 2,
@@ -319,34 +335,43 @@
       "bought_times": 0
     },
     {
-      "name": "Vector",
+      "name": "Overwatch 2",
       "genres": "Action",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/9/95/Vector_2010_game_poster.jpeg",
-      "platforms": "Mobile",
-      "release_date": "10/2/2020",
-      "id": 21,
-      "bought_times": 0
+      "image_url": "https://image.api.playstation.com/vulcan/ap/rnd/202301/3011/xwuKTCzLwA1tvaINaIq9egdZ.png\"",
+      "platforms": "Playstation, PC",
+      "release_date": "2016-05-24",
+      "id": 22
     },
     {
-      "id": 4,
-      "name": "Overwatch",
-      "image_url": "https://image.api.playstation.com/vulcan/ap/rnd/202301/3011/xwuKTCzLwA1tvaINaIq9egdZ.png",
-      "genres": [
-        "Action",
-        "Adventure"
-      ],
-      "platforms": [
-        "PS4",
-        "Xbox One",
-        "PC"
-      ],
-      "release_date": "2016-05-24",
-      "InStock": "100",
-      "like": "❤️",
-      "dislike": "👎",
-      "likes": 3,
-      "dislikes": 7,
-      "bought_times": 0
+      "name": "Angry Birds",
+      "genres": "Action",
+      "image_url": "https://assets-prd.ignimgs.com/2023/01/27/angrybirds-1674798875645.jpg",
+      "platforms": "Mobile",
+      "release_date": "2015-10-3",
+      "id": 23
+    },
+    {
+      "name": "Apex Legends",
+      "genres": "Action, Battle Royale",
+      "image_url": "https://image.api.playstation.com/vulcan/ap/rnd/202302/0119/a56551be203c095b4142a026780b1911b0d4ac603573b4a1.png",
+      "platforms": "Playstation, PC, Mobile",
+      "release_date": "2018-07-13"
+    },
+    {
+      "name": "Shadow Fight",
+      "genres": "Action",
+      "image_url": "https://play-lh.googleusercontent.com/NXI9hzMuL5lLXJ2YZ2h_rsKzWj1fqfqAlu8ylhhjuwHBs9KwHHmHEcf8RRZhNwWsOUk",
+      "platforms": "Mobile",
+      "release_date": "2018-07-13",
+      "id": 24
+    },
+    {
+      "name": "Vector",
+      "genres": "Action",
+      "image_url": "https://www.gamespot.com/a/uploads/screen_kubrick/416/4161502/2400179-vector.png",
+      "platforms": "Mobile",
+      "release_date": "2015-10-3",
+      "id": 25
     }
   ]
 }

@@ -176,13 +176,14 @@ function createCard(games) {
   const gameGenre = document.querySelector('#gameGenre').value;
   const gameUrl = document.querySelector('#gameUrl').value;
   const gamePlatforms = document.querySelector('#gamePlatforms').value;
+  const gameRelease = document.querySelector('#gameRelease').value;
 
   // Check if game with same name already exists
   fetch(`http://localhost:3000/games?name=${gameName}`)
     .then(res => res.json())
     .then(data => {
       if (data.length > 0) {
-        alert('Game already exists');
+        console.log();
       } else {
         // Create new game
         const game = {
@@ -190,10 +191,10 @@ function createCard(games) {
           genres: gameGenre,
           image_url: gameUrl,
           platforms: gamePlatforms,
-          release_date: "10/2/2020"
+          release_date: gameRelease
         };
-        fetch(`http://localhost:3000/user_games`, {
-          method: "PATCH",
+        fetch(`http://localhost:3000/games`, {
+          method: "POST",
           headers: {"Content-type": "application/json"},
           body: JSON.stringify(game)
         })
@@ -206,7 +207,7 @@ function createCard(games) {
           // Retrieve games data and create new cards
           fetch('http://localhost:3000/games')
             .then(res => res.json())
-            .then(data => createCard(data));
+            .then(data => createCard(game));
         });
       }
     });
